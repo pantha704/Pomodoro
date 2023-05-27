@@ -1,5 +1,7 @@
 from tkinter import *
 import math
+import tkinter.messagebox
+
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -71,6 +73,7 @@ def count_down(count):
         for _ in range(work_sessions):
             marks += "✅"
         check_marks.config(text=marks)
+        tkinter.messagebox.showinfo("Alert! ", "Session complete.")
 
 
 # Numbers of reps/2 = number of check marks
